@@ -1,5 +1,5 @@
 # alfred-phoneticSpelling 🙊
- A workflow to help the phonetically challenged
+ An Alfred workflow for the phonetically challenged
 
 ![](screenshot.png)
 
