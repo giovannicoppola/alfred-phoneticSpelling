@@ -1,7 +1,7 @@
 # alfred-phoneticSpelling 🙊
  An Alfred workflow for the phonetically challenged
 
-![](screenshot.png)
+![](source/screenshot.png)
 
 <a href="https://github.com/giovannicoppola/alfred-phoneticSpelling/releases/latest/">
 <img alt="Downloads"
