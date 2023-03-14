@@ -1,0 +1,72 @@
+English Phonetic Alphabet
+A  	Andrew
+B  	Benjamin
+C  	Charlie
+D  	David
+E  	Edward
+F  	Fredrick
+G  	George
+H  	Harry
+I  	Isaac
+J  	Jack
+K  	King
+L  	Lucy
+M  	Mary
+N  	Nelli
+O  	Oliver
+P  	Peter
+Q  	Queenie
+R  	Robert
+S  	Sugar
+T  	Tommy
+U  	Uncle
+V  	Victor
+W  	William
+X  	Xmas
+Y  	Yellow
+Z  	Zebra
+    Space
+.   Period
+,   Comma
+;   Semicolon
+:   Colon
+?   Question Mark
+!   Exclamation Mark
+@   At Sign
+&   Ampersand
+"   Double Quotation Mark
+'   Apostrophe
+-   Dash
+/   Forward Slash
+\   Backslash
+(   Left Round Bracket / Parenthesis
+)   Right Round Bracket / Parenthesis
+[   Left Square Bracket
+]   Right Square Bracket
+{   Left Curly Bracket
+}   Right Curly Bracket
+<   Left Angle Bracket / Less-Than Sign
+>   Right Angle Bracket / Greater-Than Sign
+|   Vertical Bar / Pipe
+°   Degree Symbol
+*   Asterisk / Star
++   Plus Sign
+=   Equal Sign
+#   Number Sign / Pound Sign / Hash
+§   Section Sign
+$   Dollar Sign
+€   Euro Sign
+~   Tilde
+_   Underscore
+%   Percent Sign
+^   Caret
+0   Zero 
+1   One 
+2   Two 
+3   Three 
+4   Four 
+5   Five 
+6   Six 
+7   Seven 
+8   Eight 
+9   Nine 

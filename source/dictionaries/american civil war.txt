@@ -1,0 +1,72 @@
+American Civil War spelling dictionary
+A   Antietam
+B   Bull Run
+C   Confederate
+D   Davis
+E   Emancipation
+F   Fort Sumter
+G   Gettysburg
+H   Hardtack
+I   Ironclad
+J   Jackson
+K   Kansas-Nebraska
+L   Lincoln
+M   Monitor
+N   Proclamation
+O   Offensive
+P   Potomac
+Q   Quantrill
+R   Richmond
+S   Secession
+T   Tecumseh
+U   Union
+V   Vicksburg
+W   Works
+X   X corps
+Y   Yankee
+Z   Zouave
+    Space
+.   Period
+,   Comma
+;   Semicolon
+:   Colon
+?   Question Mark
+!   Exclamation Mark
+@   At Sign
+&   Ampersand
+"   Double Quotation Mark
+'   Apostrophe
+-   Dash
+/   Forward Slash
+\   Backslash
+(   Left Round Bracket / Parenthesis
+)   Right Round Bracket / Parenthesis
+[   Left Square Bracket
+]   Right Square Bracket
+{   Left Curly Bracket
+}   Right Curly Bracket
+<   Left Angle Bracket / Less-Than Sign
+>   Right Angle Bracket / Greater-Than Sign
+|   Vertical Bar / Pipe
+°   Degree Symbol
+*   Asterisk / Star
++   Plus Sign
+=   Equal Sign
+#   Number Sign / Pound Sign / Hash
+§   Section Sign
+$   Dollar Sign
+€   Euro Sign
+~   Tilde
+_   Underscore
+%   Percent Sign
+^   Caret
+0   Zero 
+1   One 
+2   Two 
+3   Three 
+4   Four 
+5   Five 
+6   Six 
+7   Seven 
+8   Eight 
+9   Nine 

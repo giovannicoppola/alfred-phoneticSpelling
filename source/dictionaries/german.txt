@@ -1,0 +1,72 @@
+German Phonetic Alphabet
+A  Anton
+B  Berta
+C  Casar
+D  Dora
+E  Emil
+F  Friedrich
+G  Gustav
+H  Heinrich
+I  Ida
+J  Julius
+K  Kaufmann
+L  Ludwig
+M  Martha
+N  Nordpol
+O  Otto
+P  Paula
+Q  Quelle
+R  Richard
+S  Samuel
+T  Theodor
+U  Ulrich
+V  Viktor
+W  Wilhelm
+X  Xanthippe
+Y  Ypsilon
+Z  Zeppelin
+    Space
+.   Period
+,   Comma
+;   Semicolon
+:   Colon
+?   Question Mark
+!   Exclamation Mark
+@   At Sign
+&   Ampersand
+"   Double Quotation Mark
+'   Apostrophe
+-   Dash
+/   Forward Slash
+\   Backslash
+(   Left Round Bracket / Parenthesis
+)   Right Round Bracket / Parenthesis
+[   Left Square Bracket
+]   Right Square Bracket
+{   Left Curly Bracket
+}   Right Curly Bracket
+<   Left Angle Bracket / Less-Than Sign
+>   Right Angle Bracket / Greater-Than Sign
+|   Vertical Bar / Pipe
+°   Degree Symbol
+*   Asterisk / Star
++   Plus Sign
+=   Equal Sign
+#   Number Sign / Pound Sign / Hash
+§   Section Sign
+$   Dollar Sign
+€   Euro Sign
+~   Tilde
+_   Underscore
+%   Percent Sign
+^   Caret
+0   Zero 
+1   One 
+2   Two 
+3   Three 
+4   Four 
+5   Five 
+6   Six 
+7   Seven 
+8   Eight 
+9   Nine 

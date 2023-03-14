@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>giovanni.spelling</string>
+	<key>connections</key>
+	<dict>
+		<key>70CCDF35-D79E-48BB-8E30-A10C75347DAA</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>FAC843D7-8C9A-4FDB-B541-8580F0803131</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>FAC843D7-8C9A-4FDB-B541-8580F0803131</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>970817D1-6997-4C5A-95A2-3E0E35616117</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<true/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>019462DA-CC5E-45F9-A91E-0A1F4E6BBADA</string>
+				<key>modifiers</key>
+				<integer>131072</integer>
+				<key>modifiersubtext</key>
+				<string>Open and edit a custom dictionary</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>giovanni</string>
+	<key>description</key>
+	<string>A workflow to help the phonetically challenged</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Phonetic Spelling</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alignment</key>
+				<integer>0</integer>
+				<key>backgroundcolor</key>
+				<string></string>
+				<key>fadespeed</key>
+				<integer>50</integer>
+				<key>fillmode</key>
+				<integer>0</integer>
+				<key>font</key>
+				<string>Monaco</string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
+				<key>largetypetext</key>
+				<string>{var:mySpelling}</string>
+				<key>textcolor</key>
+				<string>#00F900FF</string>
+				<key>wrapat</key>
+				<integer>50</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.largetype</string>
+			<key>uid</key>
+			<string>970817D1-6997-4C5A-95A2-3E0E35616117</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>1</integer>
+				<key>hotmod</key>
+				<integer>1310720</integer>
+				<key>hotstring</key>
+				<string>S</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>70CCDF35-D79E-48BB-8E30-A10C75347DAA</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>{var:mainkeyword}</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>script</key>
+				<string>export PATH=/opt/homebrew/bin:/usr/local/bin:$PATH
+export PYTHONPATH="$PWD/lib"
+python3 spelling.py "$1"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>enter a word to spell</string>
+				<key>title</key>
+				<string>alfred spelling assistant</string>
+				<key>type</key>
+				<integer>5</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>FAC843D7-8C9A-4FDB-B541-8580F0803131</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>126</integer>
+				<key>script</key>
+				<string>open "dictionaries/custom.txt"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>5</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>019462DA-CC5E-45F9-A91E-0A1F4E6BBADA</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string># alfred-phoneticSpelling
+ A workflow to help the phonetically challenged
+
+![](screenshot.png)
+
+
+# Usage
+- use a hotkey or a keyword (default: `!!s`)
+- actioning one item will show spelling in large font
+- Choose a dictionary in `Configure Workflow`
+- shift+enter will open a custom dictionary (remember to leave at least one space between letter and word)
+
+
+Icon from https://iconarchive.com/</string>
+	<key>uidata</key>
+	<dict>
+		<key>019462DA-CC5E-45F9-A91E-0A1F4E6BBADA</key>
+		<dict>
+			<key>xpos</key>
+			<real>895</real>
+			<key>ypos</key>
+			<real>270</real>
+		</dict>
+		<key>70CCDF35-D79E-48BB-8E30-A10C75347DAA</key>
+		<dict>
+			<key>xpos</key>
+			<real>305</real>
+			<key>ypos</key>
+			<real>180</real>
+		</dict>
+		<key>970817D1-6997-4C5A-95A2-3E0E35616117</key>
+		<dict>
+			<key>xpos</key>
+			<real>895</real>
+			<key>ypos</key>
+			<real>105</real>
+		</dict>
+		<key>FAC843D7-8C9A-4FDB-B541-8580F0803131</key>
+		<dict>
+			<key>xpos</key>
+			<real>515</real>
+			<key>ypos</key>
+			<real>180</real>
+		</dict>
+	</dict>
+	<key>userconfigurationconfig</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string>american.txt</string>
+				<key>pairs</key>
+				<array>
+					<array>
+						<string>American</string>
+						<string>american.txt</string>
+					</array>
+					<array>
+						<string>Morse</string>
+						<string>morse.txt</string>
+					</array>
+					<array>
+						<string>NATO</string>
+						<string>NATO.txt</string>
+					</array>
+					<array>
+						<string>English</string>
+						<string>english.txt</string>
+					</array>
+					<array>
+						<string>Another american</string>
+						<string>american2.txt</string>
+					</array>
+					<array>
+						<string>Italian</string>
+						<string>italian.txt</string>
+					</array>
+					<array>
+						<string>German</string>
+						<string>german.txt</string>
+					</array>
+					<array>
+						<string>International</string>
+						<string>international.txt</string>
+					</array>
+					<array>
+						<string>American Civil War</string>
+						<string>american civil war.txt</string>
+					</array>
+					<array>
+						<string>Custom</string>
+						<string>custom.txt</string>
+					</array>
+				</array>
+			</dict>
+			<key>description</key>
+			<string>Choose one of the available dictionaries or customize your own</string>
+			<key>label</key>
+			<string>Spelling Dictionary</string>
+			<key>type</key>
+			<string>popupbutton</string>
+			<key>variable</key>
+			<string>DICTIONARY</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string>spell</string>
+				<key>placeholder</key>
+				<string></string>
+				<key>required</key>
+				<false/>
+				<key>trim</key>
+				<true/>
+			</dict>
+			<key>description</key>
+			<string></string>
+			<key>label</key>
+			<string>Main keyword</string>
+			<key>type</key>
+			<string>textfield</string>
+			<key>variable</key>
+			<string>mainkeyword</string>
+		</dict>
+	</array>
+	<key>variablesdontexport</key>
+	<array/>
+	<key>version</key>
+	<string>1.0</string>
+	<key>webaddress</key>
+	<string>https://github.com/giovannicoppola/alfred-phoneticSpelling</string>
+</dict>
+</plist>
