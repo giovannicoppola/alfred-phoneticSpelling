@@ -25,7 +25,7 @@ W   William
 X   X-ray
 Y   Young
 Z   Zero
-    Space
+ Space
 .   Period
 ,   Comma
 ;   Semicolon

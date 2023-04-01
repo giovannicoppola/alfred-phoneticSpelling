@@ -9,6 +9,18 @@ import json
 import sys
 import os
 DICTIONARY = 'dictionaries/'+ os.path.expanduser(os.getenv('DICTIONARY', ''))
+WF_BUNDLE = os.getenv('alfred_workflow_bundleid')
+CUSTOM_DIC_FOLDER = os.path.expanduser('~')+"/Library/Application Support/Alfred/Workflow Data/"+WF_BUNDLE
+CUSTOM_DIC_FILE = f"{CUSTOM_DIC_FOLDER}/custom.txt"
+
+if DICTIONARY == 'dictionaries/custom.txt':
+    DICTIONARY = CUSTOM_DIC_FILE
+
+if not os.path.exists(CUSTOM_DIC_FOLDER):
+    os.makedirs(CUSTOM_DIC_FOLDER)
+if not os.path.exists(CUSTOM_DIC_FILE):
+    os.rename('dictionaries/custom.txt', CUSTOM_DIC_FILE)
+
 
 myInput = sys.argv[1]
 
