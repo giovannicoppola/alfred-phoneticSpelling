@@ -10,7 +10,7 @@ src="https://img.shields.io/github/downloads/giovannicoppola/alfred-phoneticSpel
 
 
 # Usage
-- use a hotkey or a keyword (default: `spell`)
+- use a hotkey or a keyword (default: `!!s`)
 - actioning one item will show spelling in large font
 - shift+enter will open a custom dictionary (remember to leave at least one space between letter and word)
 
