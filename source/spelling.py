@@ -8,6 +8,8 @@
 import json
 import sys
 import os
+import unicodedata
+
 DICTIONARY = 'dictionaries/'+ os.path.expanduser(os.getenv('DICTIONARY', ''))
 WF_BUNDLE = os.getenv('alfred_workflow_bundleid')
 CUSTOM_DIC_FOLDER = os.path.expanduser('~')+"/Library/Application Support/Alfred/Workflow Data/"+WF_BUNDLE
@@ -22,57 +24,70 @@ if not os.path.exists(CUSTOM_DIC_FILE):
     os.rename('dictionaries/custom.txt', CUSTOM_DIC_FILE)
 
 
-myInput = sys.argv[1]
-
-myInput = myInput.replace('"', '\"')
-
-myLetters = list(myInput.upper())
 def log(s, *args):
     if args:
         s = s % args
     print(s, file=sys.stderr)
 
+
+myInput = sys.argv[1]
+
+myInput = myInput.replace('"', '\"')
+
+
+
+myInputN = unicodedata.normalize("NFC", myInput)
+myLetters = list(myInputN.upper())
+
+#log (myLetters)
+
+
+
+
 d = {}
 with open(DICTIONARY) as f:
     next (f)
     for line in f:
-        (key, val) = line.split(" ",1)
+        if line.startswith(" "):
+            key = '- -'
+            val = line.lstrip() 
+        else: 
+            (key, val) = line.split(" ",1)
+        
+    
         d[key] = val.strip()
-        #log (key)
-        #print (key)
-        #print (d[key])
+        
+        #log (f'key:{key}, value: {val}')
+        
 
 
 finalResult=""
 result = {"items": []}
 for myL in myLetters:
-    if myL in d.keys():
+    #log (myL)
+    if myL == " ":
+        finalResult = finalResult + myL + ' -- as in Space'+ '\n'
+        currItem = f" {myL}  -- as in Space"
+        
+    elif myL in d.keys():
         myString = d[myL]
-        if myL == " ":
-            finalResult = finalResult + myL + ' -- as in Space'+ '\n'
-            currItem = f" {myL}  -- as in Space"
-            continue
+        
         finalResult = finalResult + myL + ' -- as in ' + d[myL] + '\n'
         currItem = f" {myL} -- as in {d[myL]}"
 
-        result["items"].append({
-            "title": f"{currItem}",
-            "subtitle": f"",
-            "arg": finalResult
-                })
+    
     else:
         finalResult = finalResult + myL + ' -- as in ⁉️\n'
         currItem = f" {myL} -- as in ⁉️"
 
-        result["items"].append({
-            "title": f"{currItem}",
-            "subtitle": f"",
-            "arg": finalResult
-                })
-    
+    result["items"].append({
+        "title": f"{currItem}",
+        "subtitle": f"",
+        "arg": finalResult
+            })
+
 result['variables'] = {"mySpelling": finalResult} 
 print (json.dumps(result))
 #print (finalResult)
-
 
 

@@ -268,6 +268,10 @@ Icon from https://iconarchive.com/</string>
 						<string>italian.txt</string>
 					</array>
 					<array>
+						<string>Swedish</string>
+						<string>swedish.txt</string>
+					</array>
+					<array>
 						<string>German</string>
 						<string>german.txt</string>
 					</array>
@@ -319,7 +323,7 @@ Icon from https://iconarchive.com/</string>
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>1.1</string>
+	<string>1.2</string>
 	<key>webaddress</key>
 	<string>https://github.com/giovannicoppola/alfred-phoneticSpelling</string>
 </dict>
