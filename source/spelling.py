@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # Tuesday, April 13, 2021, 2:10 PM
 # migrated to Python 3 and Alfred 5
-#Light rain and snow, mist 🌧   🌡️+34°F (feels +25°F, 92%) 🌬️→13mph 🌗 Tue Mar 14 08:39:42 2023
+# Light rain and snow, mist 🌧   🌡️+34°F (feels +25°F, 92%) 🌬️→13mph 🌗 Tue Mar 14 08:39:42 2023
 # W11Q1 – 73 ➡️ 291 – 307 ❇️ 57
 
 
@@ -20,7 +20,7 @@ if DICTIONARY == 'dictionaries/custom.txt':
 
 if not os.path.exists(CUSTOM_DIC_FOLDER):
     os.makedirs(CUSTOM_DIC_FOLDER)
-if not os.path.exists(CUSTOM_DIC_FILE):
+if os.path.exists('dictionaries/custom.txt') and not os.path.exists(CUSTOM_DIC_FILE):
     os.rename('dictionaries/custom.txt', CUSTOM_DIC_FILE)
 
 
